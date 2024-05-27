@@ -1,0 +1,192 @@
+/*#region BODY*/
+body {
+    margin: 0;
+}
+
+.slick-dots {
+    bottom: -30px !important;
+}
+
+.slick-prev {
+    left: 0px !important;
+}
+
+.slick-next {
+    right: 2px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #1387B8 !important;
+}
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*#endregion BODY*/
+
+/*#region HOME*/
+.home {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home::after {
+    display: none;
+    background-image: url("./../IMG/top.svg");
+    bottom: 0;
+    content: "";
+    height: 48px;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.home.show-after::after {
+    display: block;
+}
+
+.homeImg {
+    width: 20% !important;
+}
+
+.form-floating {
+    position: relative;
+    margin-left: 40% !important;
+    margin-right: 40% !important;
+    width: 20% !important;
+}
+
+#search-button {
+    position: relative;
+    margin-left: 30% !important;
+    margin-right: 30% !important;
+}
+
+.error {
+    display: block;
+    font-family: Arial, Helvetica, bold;
+    position: relative;
+    margin-top: 20%;
+    color: red;
+}
+
+/*#endregion HOME*/
+
+/*#region INFOS*/
+.infos {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1387B8;
+}
+
+.infos::after {
+    display: none;
+    background-image: url("./../IMG/bottom.svg");
+    bottom: 0;
+    content: "";
+    height: 39px;
+    left: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: -2%;
+}
+
+.infos.show-after:after {
+    display: block;
+}
+
+.infosImg {
+    position: relative;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+.infosText {
+    position: relative;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    font-family: Arial, Helvetica, bold;
+    width: auto;
+}
+
+/*#endregion INFOS*/
+
+/*#region FRIEND*/
+#profile-friends {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.friends {
+    margin-top: 5%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.friends::after {
+    display: none;
+    background-image: url("./../IMG/top.svg");
+    bottom: 0;
+    content: "";
+    height: 48px;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.friends.show-after::after {
+    display: block;
+}
+
+.errorFriend {
+    position: relative;
+    color: red;
+}
+
+/*#endregion FRIEND*/
+
+/*#region GAMES*/
+#profile-games {
+    background-color: #1387B8;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.games {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-slick-dots .slick-dots {
+    background-color: #1387B8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.custom-slick-arrows .slick-prev:before,
+.custom-slick-arrows .slick-next:before {
+    color: white !important;
+}
+
+/*#endregion GAMES*/
